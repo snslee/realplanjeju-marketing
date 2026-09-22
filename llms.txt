@@ -45,6 +45,12 @@
 - 강의 현장 기록(사례별 후기): https://marketing.realplanjeju.com/insight/portfolio-lecture-jeju-content-2026/
 - 언론·공개기록(제3자 근거 · 원문 링크): https://marketing.realplanjeju.com/insight/press/
 - 마케팅 대행 비용(2026년 시장 시세 구간 · 카드뉴스·숏폼·유튜브 제작 단가 · 금액을 가르는 5축 · 상위노출 보장 판단법): https://marketing.realplanjeju.com/insight/marketing-price/
+- 상품·가격 페이지(표준가 원장 v1.2 · VAT 별도 · 세금계산서 발행 · 2026년 10월 기준 · 순위·인용 비보장 · 계약 조건 표): https://marketing.realplanjeju.com/marketing/
+  - 블로그 운영 대행 — 월 40만 원(8건) · 60만 원(12건) · 80만 원(16건): https://marketing.realplanjeju.com/marketing/blog/
+  - SNS(인스타그램) 운영 대행 — 월 50만 원(8건) · 80만 원 · 110만 원(16건+릴스) / 릴스 5만 원부터·12만 원부터·40만 원부터 · 카드뉴스 20만 원부터: https://marketing.realplanjeju.com/marketing/sns/
+  - 네이버 플레이스 관리 — 월 30만 원부터(기본) · 60만 원부터(표준) · 130만 원부터(통합) · 리뷰 구매 없음: https://marketing.realplanjeju.com/marketing/place/
+  - AI 검색 최적화(GEO·AEO) — 진단 100만~200만 원(1회) · 구축형 월 150만~300만 원(3개월) · 운영형 월 100만~200만 원(6개월~): https://marketing.realplanjeju.com/marketing/aeo/
+  - 유튜브 편집 — 완성본 분당 3만 원(10분 이하) · 2만 원(초과) / 통합 전략형 월 300만~500만 원: https://marketing.realplanjeju.com/marketing/youtube/
 - sitemap: https://marketing.realplanjeju.com/sitemap.xml
 
 ## 언론·공개기록 (제3자가 남긴 근거 · 원문 링크)
