@@ -639,6 +639,18 @@ document.addEventListener('DOMContentLoaded',function(){add();try{var r=document
 </div><!-- /rp-root -->
 
 <script>
+(function(){if(window.__rpVid)return;window.__rpVid=1;
+/* 2026-09-30 영상 사이트 안 재생(팝업) — 홈A와 같은 방식 · 쇼츠는 세로, 일반 영상은 가로 · 링크는 그대로 두어 스크립트 실패 시 유튜브로 열림 */
+function shut(){var o=document.getElementById('rp-vm');if(o){o.remove();document.body.style.overflow='';}}
+function show(id,cap,tall){shut();var o=document.createElement('div');o.id='rp-vm';o.setAttribute('role','dialog');o.setAttribute('aria-modal','true');o.setAttribute('aria-label',cap||'영상');
+o.style.cssText='position:fixed;inset:0;background:rgba(10,16,28,.86);z-index:99999;display:flex;align-items:center;justify-content:center;padding:56px 16px 16px';
+var box=tall?'height:min(82vh,150vw);aspect-ratio:9/16;max-width:92vw':'width:min(92vw,1100px);aspect-ratio:16/9;max-height:82vh';
+o.innerHTML='<div style="position:relative;'+box+'"><button type="button" id="rp-vm-x" aria-label="닫기" style="position:absolute;top:-44px;right:0;background:#fff;color:#222B3A;border:0;border-radius:999px;padding:8px 16px;font-size:14px;font-weight:800;cursor:pointer">닫기 ✕</button><iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&playsinline=1&rel=0" title="'+(cap||'영상').replace(/"/g,'')+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="width:100%;height:100%;border:0;border-radius:14px;background:#000"></iframe></div>';
+o.addEventListener('click',function(e){if(e.target===o||e.target.id==='rp-vm-x')shut();});
+document.body.appendChild(o);document.body.style.overflow='hidden';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')shut();});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a.vid');if(!a)return;var h=a.getAttribute('href')||'';var m=h.match(/(?:shorts\/|embed\/|v=|youtu\.be\/)([\w-]{11})/);if(!m)return;e.preventDefault();var c=a.querySelector('.cap');show(m[1],c?c.textContent.trim():'',/shorts\//.test(h));});
+})();
 function rpInitSite(){
 
 var slides=document.querySelectorAll('.slide'),dots=document.getElementById('dots'),cur=0,timer;
